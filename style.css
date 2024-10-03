@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+/* Basic CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.Navigation {
+    display: flex;
+    justify-content: center;
+    gap: 25rem;
+    background-color: #0089BA;
+    padding: 1rem;
+}
+
+nav a {
+    font-family: "Dela Gothic One", sans-serif;
+    color: #58A1C2;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+.left, .middle, .right {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: black;
+}
+
+.left {
+    margin-left: auto;
+}
+
+.right {
+    margin-right: auto;
+}
+
+:root {
+    --secondary-color: #008EA0;
+    --base-padding: 2rem;
+}
+
+header {
+    background-color: #051937;
+    padding: var(--base-padding);
+    display: flex;
+    justify-content: center;
+}
+
+/* Index Page */
+.intro-text {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: var(--base-padding);
+    border-radius: .5rem;
+    color: white;
+    max-width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Dela Gothic One", sans-serif;
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: .5rem;
+    border-radius: .5rem;
+    color: white;
+}
+
+h2 {
+    font-family: "Rowdies", sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+.main-content {
+    padding: var(--base-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--base-padding);
+}
+
+.content-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--base-padding);
+}
+
+.text-box {
+    background-color: #008EA0;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    text-align: center;
+    width: 45%;
+    margin: 5.5%;
+}
+
+.image-below, .image-side {
+    display: flex;
+}
+
+.image-side{
+    justify-content: right;
+}
+
+.below-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 3px solid #008EA0;
+    width: 75%;
+}
+
+.side-image {
+    width: 40rem;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 3px solid #008EA0;
+}
+
+/* About Page */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.about-text {
+    flex: 0;
+    background-color: #58A1C2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    max-width: 500px;
+    height: 150px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    border: 3px solid #58A1C2;
+}
+
+.about-text h5 {
+    font-family: "Rowdies", sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 300;
+    }
+
+.about-page-header {
+    font-family: "Dela Gothic One", sans-serif;
+    background-color: #58A1C2;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/* Menu Page */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-padding);
+    padding: 4rem;
+    background-color: #051937;
+}
+
+.food {
+    font-family: "Rowdies", sans-serif;
+    width: 75%;
+    text-align: left;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.price {
+    font-family: "Rowdies", sans-serif;
+    width: 25%;
+    text-align: right;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.item {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 1.5rem;
+}
